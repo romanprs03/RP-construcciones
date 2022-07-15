@@ -6,47 +6,115 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RP construcciones | Contácto</title>
     <link rel="shortcut icon" href="../img/logo_size.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/archivo.css" />
 </head>
 <body class="cuerpo2">
-    <header class="encabezado">
-        <nav>   
-            <ul class="header2">
-                <li><a href="../index.html" class="opciones">Inicio</a></li>
-                <li><a href="servicios.html" class="opciones">Servicios</a></li>
-                <li><a href="obras.html" class="opciones">Obras</a></li>
-                <li><a href="acerca.html" class="opciones">Sobre mí</a></li>
-                <li><a href="contacto.html" class="opciones">Contacto</a></li>
-            </ul>
+    <header class="encabezado tercero">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="head container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo_size.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="opciones nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="opciones nav-link active" aria-current="page" href="acerca.html">Sobre mí</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="opciones nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="servicios.html">Ver todos los servicios</a></li>
+                    <li><a class="dropdown-item" href="../services/design.html">Diseño</a></li>
+                    <li><a class="dropdown-item" href="../services/draw.html">Dibujo</a></li>
+                    <li><a class="dropdown-item" href="../services/new.html">Nueva Obra</a></li>
+                    <li><a class="dropdown-item" href="../services/redesign.html">Rediseño</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../services/other.html">Otro</a></li>
+                  </ul>
+                  <li class="nav-item">
+                    <a class="opciones nav-link active" aria-current="page" href="obras.html">Obras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="opciones nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <img  class="logo"src="../img/logo_size.jpg" alt="Logo">
-    </header>
+      </header>
         <main>
         <h1 class="titulo">Ponete en contácto</h1>
             <h3 class="complete">Completá este formulario</h3>
             <h4 class="datos">Datos personales</h4>
-            <form action="">
-                <fieldset class="formulario">
-                    <label for="name" class="form">Nombre</label>
-                    <input type="text" name="name" id="name" class="form2" placeholder="Ingrese nombre" required>
-                    <label for="apellido" class="form">Apellido</label>
-                    <input type="text" name="apellido" id="apellido" class="form2" placeholder="Ingrese apellido" required>
-                    <label for="email" class="form">Correo electronico</label>
-                    <input type="email" name="email" id="email" class="form2" placeholder="Ingrese su correo electronico" required>
-                    <label for="telefono" class="form">Número de teléfono</label>
-                    <input type="tel" name="telefono" id="telefono" class="form2" placeholder="Ingrese su número de telefono" required>
-                    <h4>Elija su país de residencia</h4>
-                    Argentina</div>
-                    <input type="radio" class="form2" name=residencia value="Argentina" required>
-                    Venezuela</div>
-                    <input type="radio" class="form2" name=residencia value="Venezuela" required>
-                    Bolivia</div>
-                    <input type="radio" class="form2" name=residencia value="Bolivia" required>
-                    <div class="form3">Acepta los términos y condiciones</div>
-                    <input type="checkbox" class="form3" name=acepta value="1" required>
-                    <input type="submit" class="form4" value="Enviar">
-                </fieldset>
-            </form>
+            <form class="form row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="Apellido" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">E-Mail</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom04" class="form-label">Ciudad</label>
+                  <select class="form-select" id="validationCustom04" required>
+                    <option selected disabled value="">Seleccione su ciudad</option>
+                    <option>Buenos Aires</option>
+                    <option>Rosario</option>
+                    <option>Montevideo</option>
+                    <option>Bogotá</option>
+                    <option>Lima</option>
+                    <option>Brasilia</option>
+                  </select>
+                  <div class="invalid-feedback">
+                    Please select a valid state.
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Número de telefono</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Acepto los términos y condiciones
+                    </label>
+                    <div class="invalid-feedback">
+                      Tenés que aceptar los términos y condiciones para continuar
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </form>
         </main>
         <footer class="pie">
             <h4 class="mis">Mis redes:</h4>
@@ -55,5 +123,6 @@
                 <a class="redes" href="https://www.twitter.com/arquitectos/" target="_blank"><img class="ig"src="../img/logo_twit.png" alt="twit logo"></a>
                 <a class="redes" href="https://www.pinterest.com/arquitectos/" target="_blank"><img class="ig"src="../img/logo_pint.png" alt="pint logo"></a>
          </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>

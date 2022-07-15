@@ -6,27 +6,75 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RP construcciones | Obras</title>
     <link rel="shortcut icon" href="../img/logo_size.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/archivo.css" />
 </head>
 <body>
-    <header class="encabezado">
-        <nav>  
-            <ul class="header2">
-                <li><a href="../index.html" class="opciones">Inicio</a></li>
-                <li><a href="servicios.html" class="opciones">Servicios</a></li>
-                <li><a href="obras.html" class="opciones">Obras</a></li>
-                <li><a href="acerca.html" class="opciones">Sobre mí</a></li>
-                <li><a href="contacto.html" class="opciones">Contacto</a></li>
-            </ul>
+    <header class="encabezado tercero">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="head container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo_size.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="opciones nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="opciones nav-link active" aria-current="page" href="acerca.html">Sobre mí</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="opciones nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Servicios
+                  </a>
+                  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="servicios.html">Ver todos los servicios</a></li>
+                    <li><a class="dropdown-item" href="../services/design.html">Diseño</a></li>
+                    <li><a class="dropdown-item" href="../services/draw.html">Dibujo</a></li>
+                    <li><a class="dropdown-item" href="../services/new.html">Nueva Obra</a></li>
+                    <li><a class="dropdown-item" href="../services/redesign.html">Rediseño</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="../services/other.html">Otro</a></li>
+                  </ul>
+                  <li class="nav-item">
+                    <a class="opciones nav-link active" aria-current="page" href="obras.html">Obras</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="opciones nav-link active" aria-current="page" href="contacto.html">Contacto</a>
+                  </li>
+              </ul>
+            </div>
+          </div>
         </nav>
-        <img  class="logo"src="../img/logo_size.jpg" alt="Logo">
-    </header>
+      </header>
     <main>
     <h1 class="titulo">Mis mejores obras</h1>
-        <img class="obras" src="../img/cocina.png" alt="render_cocina"> 
-        <img class="obras" src="../img/revit.png" alt="muestra_revit"> 
-        <img class="obras" src="../img/baño.png" alt="render_baño"> 
-        <img class="obras" src="../img/planta.png" alt="muestra_revit"> 
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="reel carousel-item active">
+            <img src="../img/baño.png" class="image d-block w-100" alt="Baño revit">
+          </div>
+          <div class="reel carousel-item">
+            <img src="../img/cocina.png" class="image d-block w-100" alt="Cocina revit">
+          </div>
+          <div class="reel carousel-item">
+            <img src="../img/planta.png" class="image d-block w-100" alt="Planta revit">
+          </div>
+          <div class="reel carousel-item">
+            <img src="../img/revit.png" class="image d-block w-100" alt="Revit">
+          </div>
+        </div>
+        <button class="boton carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="boton carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </main>
     <footer class="pie">
         <h4 class="mis">Mis redes:</h4>
@@ -35,5 +83,6 @@
         <a class="redes" href="https://www.twitter.com/arquitectos/" target="_blank"><img class="ig"src="../img/logo_twit.png" alt="twit logo"></a>
         <a class="redes" href="https://www.pinterest.com/arquitectos/" target="_blank"><img class="ig"src="../img/logo_pint.png" alt="pint logo"></a>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
