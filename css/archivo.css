@@ -1,207 +1,193 @@
 /* Media quires*/
 /*mobile view*/
-    /* Grids y Flexbox*/
-body{
-    display: grid;
-    grid-template-areas:
-     "header header header"
-     "main main main"
-     "main main main"
-     "footer footer footer";
-    align-items: center;
-    justify-content: space-between;
-}
-.encabezado {
-    grid-area: header;
-}
-footer {
-    grid-area: footer;
-}
-main{
-    grid-area: main;
-}
-body{
-    background-color: #bbb8b4d5;
-}
-.head{
-    background-color: #bbb8b4d5;
-}
-.imagen{
-    margin-top: 120px;
-    height: 450px; width: max-content;
-}
-.opciones{
-    margin-left: 125px; padding: 20px;
-    font-size: 120%;
-}
-.opciones:hover{
-    font-weight: 500;
-}
-.pie{
-    display: flex; flex-direction: row;
-    justify-content: space-evenly;
-    margin-top: 50%;
-    background-color:#9e9e9e;
-    width: 100%;
-    height: 50px;
-}
-.redes{
+/* Grids y Flexbox*/
+body {
+  display: grid;
+  grid-template-areas: "header header header" "main main main" "main main main" "footer footer footer";
+  align-items: center;
+  justify-content: space-between;
+  background-color: #bbb8b4; }
+  body .encabezado {
+    grid-area: header; }
+  body footer {
+    grid-area: footer; }
+  body main {
+    grid-area: main; }
+
+.head {
+  background-color: #bbb8b4; }
+  .head .opciones {
+    margin-left: 125px;
+    padding: 20px;
+    font-size: 120%; }
+    .head .opciones:hover {
+      font-weight: 500; }
+
+.imagen {
+  margin-top: 25px;
+  height: 450px;
+  width: max-content; }
+
+.pie {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 50%;
+  background-color: #9e9e9e;
+  width: 100%;
+  height: 50px; }
+  .pie .redes {
     text-decoration: none;
     display: inline-block;
-    margin-left: 10%; margin-right: 10%; margin-top: 20px;
-}
-.ig{
-    width: 15px;
-    height: 15px;
-    position: absolute;
-}
-.mis{
-    margin-top: 20px;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 20px; }
+  .pie .ig {
+    width: 20px;
+    height: 20px;
+    position: absolute; }
+  .pie .mis {
+    margin-top: 22px;
     margin-left: 20px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 50%;
-}
-.titulo{
-    margin-left: 10px;
-    padding-left: 10px; padding-top: 30px; margin-bottom: 40px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-size: 150%;
-    color: rgb(87, 87, 87);
-    width: 90%;
-    height: 30px;
-}
-.servicios{
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10%;
-    padding: 10%;
-    width: 100%;
-    height: 100%;
-    border: solid 3px; color: #9c9c9c;
-    font-size: 120%;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #525252;
-    transition: all 0.25s;
-}
-.servicios:hover{
-    font-size: 120%
-}
-.cuerpo{
-    background-image: url(../img/background_img.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-}
-.cuerpo2{
-    background-image: url(../img/background_img_2.jpg);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center center;
-    background-size: cover;
-}
-.datos{
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+    font-size: 80%; }
+
+.titulo {
+  margin-left: 10px;
+  padding-left: 10px;
+  padding-top: 30px;
+  margin-bottom: 40px;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  font-size: 150%;
+  color: #575757;
+  width: 90%;
+  height: 30px; }
+
+.servicios {
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 10%;
+  padding: 10%;
+  width: 100%;
+  height: 100%;
+  border: solid 3px;
+  color: #9c9c9c;
+  font-size: 120%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  background-color: #bbb8b4;
+  transition: all 0.25s; }
+  .servicios:hover {
+    font-size: 120%; }
+
+.cuerpo {
+  background-image: url(../img/background_img.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; }
+
+.cuerpo2 {
+  background-image: url(../img/background_img_2.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: cover; }
+
+.complete {
+  visibility: hidden;
+  font-size: 120%;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+  .complete .datos {
     visibility: hidden;
     font-size: 100%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.complete{
-    visibility: hidden;
-    font-size: 120%;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-}
-.obras{
-    display: flex; flex-direction: row;
-    justify-content: space-evenly;
-    display: inline-block;
-    padding-left: 25%;
-    padding-top: 5%; 
-    width: 50%;
-    height: 60%;
-    transition: all 0.75s;
-}
-.obras:hover{
-    width: 40%;
-}
-p{
-    width: 100%;
-    margin-left: 10px;
-    margin-top: 10px;
-}
-.acerca{
-    width: 90%;
-    margin-left: 5%; margin-right: 5%;
-}
-.segundo{
-    margin-top: 195%;
-}
+    font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif; }
+
+.obras {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  display: inline-block;
+  padding-left: 25%;
+  padding-top: 5%;
+  width: 50%;
+  height: 60%;
+  transition: all 0.75s; }
+
+p {
+  width: 100%;
+  margin-left: 10px;
+  margin-top: 10px; }
+
+.acerca {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%; }
+
+.segundo {
+  margin-top: 195%; }
 
 /*Desktop view*/
 @media screen and (min-width: 1024px) {
-
-    /* Box Modeling */
-.imagen{
-    width: 650px; height: 650px; 
-    margin-top: 0px;
-}
-.pie{
+  /* Box Modeling */
+  .imagen {
+    width: 650px;
+    height: 650px;
+    margin-top: 0px; }
+  .pie {
     margin-top: 10%;
     width: 100%;
-    height: 95px;    
-}  
-.redes{
-    margin-left: 10%; margin-right: 10%; margin-top: 3%;
-}
-.ig{
-    width: 30px;
-    height: 30px;
-}
-.mis{
-    position: relative;
-    top: 10px;
-    margin-left: 20px;
-    font-size: 75%;
-}
-.titulo{
+    height: 95px; }
+    .pie .redes {
+      margin-left: 10%;
+      margin-right: 10%;
+      margin-top: 3%; }
+    .pie .ig {
+      width: 30px;
+      height: 30px; }
+    .pie .mis {
+      position: relative;
+      top: 15px;
+      margin-left: 20px;
+      font-size: 90%; }
+  .titulo {
     margin-left: 10%;
-    padding-left: 20px; padding-top: 35px;
+    padding-left: 20px;
+    padding-top: 35px;
     font-size: 150%;
     width: 90%;
-    height: 60px;
-}
-.servicios{
+    height: 60px; }
+  .servicios {
     width: 385px;
     margin: 2%;
     padding: 100px;
-    font-size: 175%;
-}
-.form{
+    font-size: 175%; }
+  .form {
     width: 90%;
-    margin: 30px;
-}
-.datos{
-    visibility: visible;
-    font-size: 100%; margin-bottom: 30px; margin-left: 20px;
-}
-.complete{
-    visibility: visible;
-    font-size: 120%;
-    margin-top: 30px; margin-bottom: 30px; margin-left: 20px;
-}
-
-.image{
-    padding-left: 95px; padding-right: 95px; padding-bottom: 50px; padding-top: 30px;
+    margin: 30px; }
+    .form .datos {
+      visibility: visible;
+      font-size: 100%;
+      margin-bottom: 30px;
+      margin-left: 100px; }
+    .form .complete {
+      visibility: visible;
+      font-size: 120%;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      margin-left: 20px; }
+  .image {
+    padding-left: 95px;
+    padding-right: 95px;
+    padding-bottom: 50px;
+    padding-top: 30px;
     width: 200px;
-    height: 700px;
-}
-p{
+    height: 700px; }
+  p {
     width: 1000px;
     margin-left: 10%;
     position: relative;
-    top: 10px;
-}
-.acerca{
+    top: 10px; }
+  .acerca {
     width: 80%;
-    margin-left: 10%; margin-right: 10%;
-}
-}
+    margin-left: 10%;
+    margin-right: 10%; } }
