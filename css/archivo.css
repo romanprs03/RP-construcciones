@@ -85,7 +85,7 @@ body {
     .servicios .botones:hover {
       text-decoration: overline; }
 
-.cuerpo {
+.cuerpo, .cuerpo2 {
   background-image: url(../img/background_img.jpg);
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -93,11 +93,7 @@ body {
   background-size: cover; }
 
 .cuerpo2 {
-  background-image: url(../img/background_img_2.jpg);
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center center;
-  background-size: cover; }
+  background-image: url(../img/background_img_2.jpg); }
 
 .complete {
   visibility: hidden;
@@ -119,23 +115,20 @@ body {
   height: 60%;
   transition: all 0.75s; }
 
-.acerca {
-  width: 90%;
-  margin-left: 5%;
-  margin-right: 5%; }
-
 .segundo {
   margin-top: 195%; }
 
 p {
   width: 100%;
   margin-left: 10px;
-  margin-top: 10px; }
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .acerca {
   width: 90%;
   margin-left: 5%;
-  margin-top: 2%; }
+  margin-top: 2%;
+  margin-bottom: 2%; }
 
 /*Desktop view*/
 @media screen and (min-width: 1024px) {

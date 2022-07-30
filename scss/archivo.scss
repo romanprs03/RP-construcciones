@@ -127,14 +127,14 @@
     .segundo{
         margin-top: 195%;
     }
-    @mixin sizes($width, $margin-left, $margin-top) {
+    @mixin sizes($width, $margin-left, $margin-top, $margin-bottom) {
         width: $width;
         margin-left: $margin-left;
         margin-top: $margin-top;
-        margin-bottom: $margin-bottom
+        margin-bottom: $margin-bottom;
      }
      p{
-        @include sizes(100%, 10px, 10px);
+        @include sizes(100%, 10px, 10px, 10px);
      }
      .acerca{
         @include sizes(90%, 5%, 2%, 2%);
@@ -179,9 +179,6 @@
         margin: 2%;
         padding: 100px;
         font-size: 175%;
-        .botones{
-            
-        }
     }
     .form{
         width: 90%;
