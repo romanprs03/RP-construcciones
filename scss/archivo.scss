@@ -72,9 +72,9 @@
     .servicios{
         text-decoration: none;
         display: inline-block;
-        margin-top: 10%;
-        padding: 10%;
         width: 100%;
+        padding: 8%;
+        margin-top: 10%;
         height: 100%;
         border: solid 3px; color: #9c9c9c;
         font-size: 120%;
@@ -83,6 +83,14 @@
         transition: all 0.25s;
         &:hover{
             font-size: 120%
+        }
+        .botones{
+            text-decoration: none;
+            display: inline-block;
+            color: $darker-grey;
+            &:hover{
+                text-decoration:overline;
+            }
         }
     }
     .cuerpo{
@@ -93,11 +101,8 @@
         background-size: cover;
     }
     .cuerpo2{
+        @extend.cuerpo;
         background-image: url(../img/background_img_2.jpg);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-position: center center;
-        background-size: cover;
     }
     .complete{
         visibility: hidden;
@@ -119,18 +124,22 @@
         height: 60%;
         transition: all 0.75s;
     }    
-    p{
-        width: 100%;
-        margin-left: 10px;
-        margin-top: 10px;
-    }
-    .acerca{
-        width: 90%;
-        margin-left: 5%; margin-right: 5%;
-    }
     .segundo{
         margin-top: 195%;
     }
+    @mixin sizes($width, $margin-left, $margin-top) {
+        width: $width;
+        margin-left: $margin-left;
+        margin-top: $margin-top;
+        margin-bottom: $margin-bottom
+     }
+     p{
+        @include sizes(100%, 10px, 10px);
+     }
+     .acerca{
+        @include sizes(90%, 5%, 2%, 2%);
+     }
+     
     
     /*Desktop view*/
     @media screen and (min-width: 1024px) {
@@ -170,6 +179,9 @@
         margin: 2%;
         padding: 100px;
         font-size: 175%;
+        .botones{
+            
+        }
     }
     .form{
         width: 90%;
