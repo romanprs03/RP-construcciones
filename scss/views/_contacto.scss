@@ -1,0 +1,10 @@
+.complete{
+    visibility: hidden;
+    font-size: 120%;
+    font-family: $generic-font;
+    .datos{
+        visibility: hidden;
+        font-size: 100%;
+        font-family: $generic-font;
+    }
+}

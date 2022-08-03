@@ -1,0 +1,10 @@
+.head{
+    background-color: $generic-grey;
+    .opciones{
+        margin-left: 125px; padding: 20px;
+        font-size: 120%;
+        &:hover{
+            font-weight: 500;
+        }
+    }
+} 

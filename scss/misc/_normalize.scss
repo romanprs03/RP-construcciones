@@ -1,0 +1,34 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: grid;
+    grid-template-areas:
+     "header header header"
+     "main main main"
+     "main main main"
+     "footer footer footer";
+    align-items: center;
+    justify-content: space-between;
+    .encabezado {
+        grid-area: header;
+    }
+    footer {
+        grid-area: footer;
+    }
+    main{
+        grid-area: main;
+    }
+    background-color: $generic-grey;
+}
+.titulo{
+    margin-left: 10px;
+    padding-left: 10px; padding-top: 30px; margin-bottom: 40px;
+    font-family: $generic-font;
+    font-size: 150%;
+    color: rgb(87, 87, 87);
+    width: 90%;
+    height: 30px;
+}

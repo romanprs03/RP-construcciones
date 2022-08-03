@@ -4,23 +4,103 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dibujo</title>
+    <title>RP construcciones | Contácto</title>
     <link rel="shortcut icon" href="../img/logo_size.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/archivo.css" />
+    <meta name="description" content="Sección donde puedes contactarme">
+    <meta name="keywords" content="arquitectura, construcciones, obras, proyectos, diseños, contacto, teléfono, mail, datos">
 </head>
 <body>
-    <header>
-        <input type="button" value="Voler atrás" onClick="history.go(-1);">
-        <h1>DIBUJO DE SUS PLANOS</h1>
-    </header>
+    <header class="encabezado tercero">
+        <nav class="navbar navbar-expand-lg bg-light">
+          <div class="head container-fluid">
+            <a class="navbar-brand" href="../index.html"><img src="../img/logo_size.jpg" alt="logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="opciones nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  <li class="nav-item dropdown">
+                    <a class="opciones nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Sigue buscando
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                      <li><a class="dropdown-item" href="../services/design.html">Diseño</a></li>
+                      <li><a class="dropdown-item" href="../services/draw.html">Dibujo</a></li>
+                      <li><a class="dropdown-item" href="../services/new.html">Nueva Obra</a></li>
+                      <li><a class="dropdown-item" href="../services/redesign.html">Rediseño</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                      <li><a class="dropdown-item" href="../services/other.html">Otro</a></li>
+                    </ul>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </header>
         <main>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam earum nobis est architecto aspernatur, magni molestiae corporis. Fugit alias reprehenderit ea, ducimus hic voluptas eveniet odio velit, numquam temporibus delectus!
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quam, mollitia. Atque nobis est eaque enim vel consequatur, sint dolorum minima cumque commodi porro veritatis quae doloribus voluptatibus laudantium ab! Ipsam.
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem possimus perspiciatis aspernatur quos culpa quod tempore illum, incidunt cum itaque quas debitis nesciunt odit eius. Ipsum voluptatem corrupti ea cumque?Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam accusantium sequi quas hic quis cum, laudantium voluptates id debitis porro alias ducimus asperiores, expedita saepe repellendus possimus et consequatur
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, est velit ut consequuntur pariatur cupiditate placeat, et repellat explicabo numquam suscipit? Voluptate, magnam nihil. Porro corporis quo architecto adipisci molestiae.
+        <h1 class="titulo">Dibujo - Contactanos para solicitar este servicio</h1>
+            <p>El dibujo arquitectónico es aquel que se caracteriza por representar arquitectura, sea esta como detalle arquitectónico o como espacio arquitectónico. Puede ser expresado en planta, alzado, sección, perspectiva o perspectiva axonométrica.
+            A este tipo de dibujo se le confiere una responsabilidad, pues tiene que ser realizado pensando en las personas que habitarán esa arquitectura, sus medidas (antropometría) y los medios para su construcción. Otros aspectos, como la distribución de espacios, el color y el trabajo conceptual, se relacionan con el diseño arquitectónico.</p>
+                <img class="simagen" src="../img/dibujo.png" alt="concepto de dibujo">
+            <form class="form row g-3 needs-validation" novalidate>
+                <div class="col-md-4">
+                  <label for="validationCustom01" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="validationCustom01" value="Nombre" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustom02" class="form-label">Apellido</label>
+                  <input type="text" class="form-control" id="validationCustom02" value="Apellido" required>
+                  <div class="valid-feedback">
+                    Looks good!
+                  </div>
+                </div>
+                <div class="col-md-4">
+                  <label for="validationCustomUsername" class="form-label">E-Mail</label>
+                  <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                    <div class="invalid-feedback">
+                      Please choose a username.
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <label for="validationCustom05" class="form-label">Número de telefono</label>
+                  <input type="text" class="form-control" id="validationCustom05" required>
+                  <div class="invalid-feedback">
+                    Please provide a valid zip.
+                  </div>
+                </div>
+                <div class="col-12">
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                    <label class="form-check-label" for="invalidCheck">
+                      Acepto los términos y condiciones
+                    </label>
+                    <div class="invalid-feedback">
+                      Tenés que aceptar los términos y condiciones para continuar
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <button class="btn btn-primary" type="submit">Enviar</button>
+                </div>
+              </form>
         </main>
-    <footer>
-        <h4>Escribinos acá para solicitar este servicio</h4>
-        <h6>RPconstrucciones.draw@gmail.com</h6>
-    </footer>
+        <footer>
+            <h4 class="mis">Mis redes:</h4>
+                <a class="redes" href="https://www.instagram.com/arquitectos/" target="_blank"><img class="ig"src="../img/logo_insta.png" alt="ig logo"></a>
+                <a class="redes" href="https://www.facebook.com/arquitectorij/" target="_blank"><img class="ig"src="../img/logo_face.png" alt="face logo"></a>
+                <a class="redes" href="https://www.twitter.com/arquitectos/" target="_blank"><img class="ig"src="../img/logo_twit.png" alt="twit logo"></a>
+                <a class="redes" href="https://www.pinterest.com/arquitectos/" target="_blank"><img class="ig"src="../img/logo_pint.png" alt="pint logo"></a>
+         </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 </body>
 </html>
